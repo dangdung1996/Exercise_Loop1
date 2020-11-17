@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 số đầu dãy ibonacci và tổng</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 0;
+    let Fi;
+    let count = 0;
+    let sum= 0
+    while(count <= 20){
+        document.write("stt"+ count + " = "+  Fi + "<br>")
+        Fi = a + b;
+        a = b;
+        b = Fi;
+        count++
+        sum = sum + Fi
+    }document.write("Tổng: = "+ sum)
+</script>
+</body>
+</html>

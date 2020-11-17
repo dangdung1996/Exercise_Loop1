@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Đoán Số</title>
+</head>
+<body>
+<button onclick="play()">Chơi đi bạn êi</button>
+
+<script>
+function play(){
+
+            let a = Number(prompt("Nhập số bắt đầu trong khoảng"));
+            let b = Number(prompt("Nhập số kết thúc trong khoảng"));
+            let c = parseInt(Math.random()*(b-a)+a);
+
+            for (let i = 1; i <= 3;i++){
+            let numbertest = Number(prompt("Nhập số bạn muốn đoán"));
+
+            if(numbertest < c){
+                alert("Nhỏ hơn nhé babe");
+                }else if(numbertest > c){
+                alert("Lớn hơn rồi bạn à");
+                }else {
+                alert("Chuẩn xác, Bạn thật giỏi")
+
+                }
+            }
+
+
+
+}
+
+</script>
+</body>
+</html>

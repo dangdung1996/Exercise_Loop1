@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số đầu tiên chia hết cho 5 trong dãy Fibonacci</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 0;
+    let Fi;
+    let count = 0;
+    while(count < 1000){
+        Fi = a + b;
+        a = b;
+        b = Fi;
+        if(Fi % 5 == 0){
+            alert("Số đầu tiên chia hết cho 5 trong dãy Fibonacci là:" + Fi);
+            break;
+        }count++
+    }
+
+</script>
+</body>
+</html>
